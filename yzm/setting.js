@@ -33,7 +33,7 @@ var YZM = {
         //loading页等待时间 单位s
         YZM.ads = "";
         // 广告开关，on为开，关删掉此行
-        config.logo = "./logo.png";
+        config.logo = "https://cdn.jsdelivr.net/gh/5sdy/blog/yzm/logo.png";
         //logo图片地址
         up.pbgjz = "";
         //弹幕违禁词
