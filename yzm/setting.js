@@ -361,9 +361,8 @@ var YZM = {
     },
     'loadedmetadataHandler': function() {
         if (YZM.playtime > 0 && YZM.dp.video.currentTime < YZM.playtime) {
-            setTimeout(function() {
-                YZM.video.con_play()
-            }, 1 * 1000);
+            YZM.dp.seek(YZM.playtime);
+            YZM.dp.notice(`您上次观看至${YZM.ctime}，正在为您续播...`);
         } else {
             setTimeout(function() {
                 if (!danmuon) {
