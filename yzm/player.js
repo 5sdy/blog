@@ -534,7 +534,7 @@
                                     i.loadSource(e.src),
                                     i.attachMedia(e)
                                 } else
-                                    this.notice("Error: Hls is not supported.");
+                                    this.notice("视频正在加载，请稍后...");
                             else
                                 this.notice("Error: Can't find Hls.");
                             break;
