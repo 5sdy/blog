@@ -669,10 +669,10 @@
                     this.template.notice.style.opacity = i,
                     this.noticeTime && clearTimeout(this.noticeTime),
                     this.events.trigger("notice_show", e),
-                    this.noticeTime = setTimeout(function() {
+                    n > 0 && (this.noticeTime = setTimeout(function() {
                         t.template.notice.style.opacity = 0,
                         t.events.trigger("notice_hide")
-                    }, n)
+                    }, n))
                 }
             }, {
                 key: "resize",
